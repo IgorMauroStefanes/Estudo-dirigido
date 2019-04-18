@@ -1,0 +1,8 @@
+# 4 Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem do aumento. Exiba o valor do aumento e do novo salário.
+
+salario = float(input("Digite o valor do salario aqui: "))
+perc = int(input(" Porcentagem do aumento: "))
+
+novosalario = salario + (salario *perc / 100)
+
+print (salarionovo)
