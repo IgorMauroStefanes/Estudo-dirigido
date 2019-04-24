@@ -1,0 +1,7 @@
+#escreva um programa que leia um valor em metros e o exiba convertido em milimetros.
+
+metro = float(input("Numero em metros"))
+milimetro=1000
+
+
+print ("milimetro", metro * milimetro)
