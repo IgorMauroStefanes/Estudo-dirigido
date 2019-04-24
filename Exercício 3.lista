@@ -1,0 +1,15 @@
+#escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuario. Calcule o total em segundos
+
+
+dias = float(input("numero de dias"))
+horas = float(input("numero de horas"))
+minutos = float(input("numero de minutos"))
+segundos = float(input("numero de segundos"))
+
+
+dias = dias*24*60*60
+horas = horas*60*60
+minutos = minutos*60
+segundos = segundos
+print (dias + horas + minutos + segundos)
+  
