@@ -5,4 +5,4 @@ perc = int(input(" Porcentagem do aumento: "))
 
 novosalario = salario + (salario *perc / 100)
 
-print (salarionovo)
+print (novosalario)
