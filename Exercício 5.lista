@@ -1,0 +1,13 @@
+#solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+
+preco_merc = float(input("preço da mercadoria"))
+
+desconto = float(input("percentual desconto"))
+
+
+descontoEmReais = (preco_merc * desconto / 100)
+preco_a_pagar = preco_merc - descontoEmReais
+
+print(preco_a_pagar)
+
+
