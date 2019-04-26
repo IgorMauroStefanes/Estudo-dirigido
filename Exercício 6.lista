@@ -1,0 +1,9 @@
+# calcule o tempo de uma viagem de carro. Pergunte a distancia a percorrer e a velocidade média esperada para viagem.
+
+
+velocidade_esperada = float(input("informe a velocidade esperada"))
+
+distancia = float(input("informe a distancia"))
+
+
+tempo_de_viagem = distancia /velocidade_esperada
