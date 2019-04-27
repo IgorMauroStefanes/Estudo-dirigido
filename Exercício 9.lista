@@ -1,0 +1,14 @@
+# Escreva um programa para calcular a redução do temp ode vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ela ja fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro, calcule quantos anos de vida um fumante perderá. Exiba o total de dias.
+
+qntdd_cigarro = float(input("Qual a quantidade de cigarros fumados por dia?"))
+
+qntdd_tempo = float(input("Por quantos anos fumou?"))
+ 
+cigarro_por_ano = qntdd_cigarro * 365 *qntdd_tempo
+
+
+tempo_perdido_em_minutos =  cigarro_por_ano * 10
+
+tempo_perdido_em_horas = tempo_perdido_em_minutos /60
+
+print( int(tempo_perdido_em_horas /24))
