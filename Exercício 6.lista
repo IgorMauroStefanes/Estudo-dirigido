@@ -7,3 +7,17 @@ distancia = float(input("informe a distancia"))
 
 
 tempo_de_viagem = distancia /velocidade_esperada
+
+
+
+
+
+
+velocidade_esperada = float(input("informe a velocidade esperada"))
+
+distancia = float(input("informe a distancia"))
+
+
+tempo_de_viagem = (distancia /velocidade_esperada, * 60)
+
+minutos = (tempo_de_viagem * 60)
