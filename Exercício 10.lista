@@ -1,0 +1,26 @@
+#10 Faça um programa para uma loja de tintas. O programa deverá pedir o tamanho em metros quadrados da área a ser pintada. Considere que a cobertura da tinta é de 1 litro para cada 6 metros quadrados e que a tinta é vendida em latas de 18 litros, que custam R$ 80,00. Informe ao usuário a quantidades de latas de tinta a serem compradas e o preço total.”
+
+import math
+
+area_pintada = int(input("Qual o tamanha a ser pintado: "))
+
+litros_nesesarios = (area_pintada / 6)
+
+#A
+latas_nesesarias= math.ceil(litros_nesesarios / 18)
+
+print ("Sera nessário", latas_nesesarias,"latas")
+
+#B
+
+galoes_nesesario = math.ceil(litros_nesesarios / 3.6)
+print ("será necessário", galoes_nesesario,"galoes")
+
+#C
+
+latas_nesesarias = int(litros_nesesarios/18)
+faltou = litros_nesesarios % 18
+galoes_nesesario = math.ceil( faltou /3.6)
+
+print ("Foram necessariss", latas_nesesarias, "latas")
+print ("Foram necessariss", galoes_nesesario, "galoes")
