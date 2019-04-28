@@ -1,6 +1,7 @@
-#converte uma temperatura em celsius para fahrenheit. F=9*C/5 +32
+# Converte uma temperatura em celsius para fahrenheit. F=9*C/5 +32.
+
 
 celsius = int(input("Digite aqui a temperatura em Celsius:"))
 fahrenheit = 9 * celsius / 5 + 32
 
-print ("Temperatura em Fahrenheit", fahrenheit)
+print ("Temperatura_em_Fahrenheit", fahrenheit)
