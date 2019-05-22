@@ -13,4 +13,15 @@ print ("area é igual a: ", area)
 
 
 
+#Calcule o valor de uma coxinha, dado que o usuario
+#vai pedir mais de uma
+
+numero_de_coxinha = int(float(input("Digite qtde desejada:")))
+
+coxinha = numero_de_coxinha * 3.00
+
+print ("O valor a ser pago é R$", coxinha)
+
+
+
 
