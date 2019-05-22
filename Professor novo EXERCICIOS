@@ -25,3 +25,24 @@ print ("O valor a ser pago é R$", coxinha)
 
 
 
+#FAÇA UM PROGRAMA QUE CALCULE o tempo de utilização
+#de um patinete eletrico. Voce deve saber que existe
+#uma taxa de utilização que permite ao usuario utilizar
+#o patinete por 10 minutos que é de R$ 5,00. Passando
+#disso, o preço sofre um acrecimo de 20% por minuto.
+# ao final da utilização deve ser mostrado ao usuario
+#o quanto deve pagar pela utilização.
+
+tempo = int(input("Qual o tempo de uso? "))
+
+valor = 5.00
+
+if tempo <= 10:
+    print ("Valor a pagar é: R$ ", valor*1)
+    
+elif tempo > 10:
+    tempo_exedente = tempo - 10
+    print ("Valor a pagar é:R$ ",(tempo_exedente + 20//100 + valor))
+
+
+
