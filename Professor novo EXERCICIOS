@@ -1,4 +1,4 @@
-#Faça um programa em Python que aceite o raio de um
+#(1)Faça um programa em Python que aceite o raio de um
 #cisculo do usuario e calcule a área.
 
 #pi vezes raio ao quadrado
@@ -13,7 +13,7 @@ print ("area é igual a: ", area)
 
 
 
-#Calcule o valor de uma coxinha, dado que o usuario
+#(2)Calcule o valor de uma coxinha, dado que o usuario
 #vai pedir mais de uma
 
 numero_de_coxinha = int(float(input("Digite qtde desejada:")))
@@ -25,7 +25,7 @@ print ("O valor a ser pago é R$", coxinha)
 
 
 
-#FAÇA UM PROGRAMA QUE CALCULE o tempo de utilização
+#(3)FAÇA UM PROGRAMA QUE CALCULE o tempo de utilização
 #de um patinete eletrico. Voce deve saber que existe
 #uma taxa de utilização que permite ao usuario utilizar
 #o patinete por 10 minutos que é de R$ 5,00. Passando
@@ -46,3 +46,4 @@ elif tempo > 10:
 
 
 
+#(4)
