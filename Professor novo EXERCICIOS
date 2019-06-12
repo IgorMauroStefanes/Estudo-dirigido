@@ -1,3 +1,4 @@
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #(1)Faça um programa em Python que aceite o raio de um
 #cisculo do usuario e calcule a área.
 
@@ -9,10 +10,7 @@ raio = float(int(input("Digite o raio: ")))
 area = 3.14* raio * raio
 
 print ("area é igual a: ", area)
-
-
-
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #(2)Calcule o valor de uma coxinha, dado que o usuario
 #vai pedir mais de uma
 
@@ -21,10 +19,7 @@ numero_de_coxinha = int(float(input("Digite qtde desejada:")))
 coxinha = numero_de_coxinha * 3.00
 
 print ("O valor a ser pago é R$", coxinha)
-
-
-
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #(3)FAÇA UM PROGRAMA QUE CALCULE o tempo de utilização
 #de um patinete eletrico. Voce deve saber que existe
 #uma taxa de utilização que permite ao usuario utilizar
@@ -43,9 +38,7 @@ if tempo <= 10:
 elif tempo > 10:
     tempo_exedente = tempo - 10
     print ("Valor a pagar é:R$ ",(tempo_exedente + 20//100 + valor))
-
-
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 #(4)que peça um número inteiro e determine se ele é ou não um número primo.
 Um número primo é aquele que é divisível somente por ele mesmo e por 1.
 
@@ -62,8 +55,7 @@ if divisor == 2:
     print('É primo')
 else:
     print('Não é primo')
-    
-
+ +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++   
 #(5)F.U.P para imprimir todos os números ímpares da lista fornecida usando loop
 for e range
 
@@ -73,24 +65,39 @@ for n in range(1,51):
     print ('..')
     
 
-
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 6. F.U.P. para imprimir todo o número primo em um intervalo.
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
 7. F.U.P. que execute a fatoração de um determinado número.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+import math
+
+def factor(n):
+  if ( n == 0):
+    return None
+  elif(n==1):
+      return 1
+  else:    
+      theFactors = []
+      for i in range(2,n+1):          
+          while n % i == 0:
+              n = n/i
+              theFactors.append(i)
+      return theFactors
 
 
+if __name__ == '__main__':
+    print (factor(100))
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 8. Faça um programa que calcule o valor total investido por um colecionador em sua
 coleção de CDs e o valor médio gasto em cada um deles. O usuário deverá informar a
 quantidade de CDs e o valor para em cada um.
-
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 9. F.U.P. que, dado um conjunto de N números, determine o menor valor, o maior
 valor e a soma dos valores. Faça com que ele aceite apenas números entre 0 e
 1000.
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
 10. F.U.P. para verificar se o número fornecido pelo usuário é um número Armstrong
@@ -98,4 +105,4 @@ ou não. No caso, em um número de Armstrong de três (3) dígitos, a soma dos
 cubos de cada dígito é igual ao número em si.
 Por exemplo: 153 = 1*1*1 + 5*5*5 + 3*3*3 // 153 é um número Armstrong.
 Nota: o número de Armstrong abcd... = an + bn + cn + dn + ...
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
