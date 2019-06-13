@@ -1,0 +1,13 @@
+#1)Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#2)Faça um Programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+lista = [2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+lista.reverse()
+for a in lista:
+    print(a,end=" ")
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#3)Crie uma lista com os 20 primeiros colocados do Campeonato Brasileiro de Futebol.
+#a) Faça um programa que mostre os 5 primeiros colocados;
+#b) Os últimos 4 colocados (zona de rebaixamento);
+#c) Mostre a posição em que se encontra a Chapecoense;
+#d) Exiba a lista dos times em ordem alfabética;
