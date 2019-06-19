@@ -1,0 +1,32 @@
+numero = 0
+while numero != 10:
+    g = input("coloque 1 numero")
+    numero = int(g)
+
+    if numero == 10:
+        print("certo")
+    else:
+        print("errado")
+    
+print ("fim de jogo")
+
+==================================
+#Sortead numero a ser adivinhado:
+
+from random import randint
+print("bem vindo")
+sorteado = randint (1,100)
+chute = 0
+while chute !- sorteado:
+g = input ("chute 1 numero")
+chute= int(g)
+if chute == sorteado:
+print("voce venceu")
+else:
+if chute >sorteado
+print("alto")
+else:
+print("baixo")
+print("fim do jogo")
+
+====================================================
