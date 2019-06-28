@@ -114,11 +114,11 @@ quantidade de CDs e o valor para em cada um.
 
 import math
 
-valor = float[5,5,5,5,5,5,5,5,5,5]
+valor =[5,5,5,5,5,5,5,5,5,5]
 
 qntd = 10
 
-soma_do_valor_de_cada_cd= sum(valor)
+soma_do_valor_de_cada_cd = sum (valor)
 
 media = soma_do_valor_de_cada_cd / qntd
 
