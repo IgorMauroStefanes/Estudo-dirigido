@@ -134,28 +134,27 @@ elemento a desenhar como mostrado no exemplo:
 >> "".join(linha)
 X------|
 =========================================================================================================================
-5) Escreva um jogo da velha para dois jogadores. O jogo deve perguntar onde você que jogar 
-e alternar entre os jogadores. A cada jogada verifique se a posição está livre. Verifique 
-também quando um jogador venceu a partida. Um jogo da velha pode ser visto como uma lista 
-de três (03) elementos, onde cada elemento é outra lista, também com três elementos.
-Exemplodo jogo:
+ #Escreva um jogo da velha para dois jogadores. O jogo deve perguntar onde você que jogar
+#e alternar entre os jogadores. A cada jogada verifique se a posição está livre. Verifique
+#também quando um jogador venceu a partida. Um jogo da velha pode ser visto como uma lista
+#de três (03) elementos, onde cada elemento é outra lista, também com três elementos.
+#Exemplodo jogo:
+velha="""               Posições
+   |   |      7 | 8 | 9
+---+---+---  ---+---+---
+   |   |      4 | 5 | 6
+---+---+---  ---+---+---
+   |   |      1 | 2 | 3
+"""
+#Onde cada posição pode ser vista como um número. Confira abaixo um exemplo das posições mapeadas
+#para a mesma posição  de seu teclado numérico:
+#  7 | 8 | 9
+# ---+---+---
+#  4 | 5 | 6
+# ---+---+---
+#  1 | 2 | 3
 
-  X | 0 |   
- ---+---+---
-    | X | X 
- ---+---+---
-    |   | 0 
-
-Onde cada posição pode ser vista como um número. Confira abaixo um exemplo das posições mapeadas
-para a mesma posição  de seu teclado numérico:
-
-  7 | 8 | 9  
- ---+---+---
-  4 | 5 | 6 
- ---+---+---
-  1 | 2 | 3 
-  
-  posições = [
+posições = [
        None,
       (5, 1), # 1
       (5, 5), # 2
@@ -179,35 +178,35 @@ ganho = [
           [ 1, 5, 9]
         ]
 
-taabuleiroo = []
+tabuleiro = []
 for linha in velha.splitlines():
-    taabuleiroo.append(list(linha))
+    tabuleiro.append(list(linha))
 
 jogador = "X"
 jogando = True
 jogadas = 0
 while True:
-    for t in taabuleiroo:
+    for t in tabuleiro:
         print("".join(t))
     if not jogando:
         break
     if jogadas == 9:
-        print("Deu velha amigo! Ninguém ganhou.")
+        print("Deu velha! Ninguém ganhou.")
         break
     jogada = int(input("Digite a posição a jogar 1-9 (jogador %s):" % jogador))
     if jogada<1 or jogada>9:
-        print("Posição inserida inválida")
+        print("Posição inválida")
         continue
 
-    if taabuleiroo[posições[jogada][0]][posições[jogada][1]] != " ":
-        print("Posição inserida ocupada.");
+    if tabuleiro[posições[jogada][0]][posições[jogada][1]] != " ":
+        print("Posição ocupada.");
         continue
 
-    taabuleiroo[posições[jogada][0]][posições[jogada][1]] = jogador
+    tabuleiro[posições[jogada][0]][posições[jogada][1]] = jogador
 
     for p in ganho:
         for x in p:
-            if taabuleiroo[posições[x][0]][posições[x][1]] != jogador:
+            if tabuleiro[posições[x][0]][posições[x][1]] != jogador:
                 break
         else:
             print("O jogador %s ganhou (%s): "%(jogador, p))
@@ -215,7 +214,6 @@ while True:
             break
     jogador = "X" if jogador == "O" else "O"
     jogadas +=1
-  
 ===============================================================================================
 6) Analise o código do programa abaixo. 
 
