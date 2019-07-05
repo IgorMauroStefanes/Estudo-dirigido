@@ -1,0 +1,15 @@
+valor = float(input("digite o valor da csa."))
+salario = float(input("digite o salario"))
+anos = int(input("quantos anos"))
+
+meses = anos *12
+
+prestacao = valor / meses
+
+if prestacao > salario *0.30:
+    print("infelizmente não dá..")
+    
+else:
+    print("valor da prestação: ", prestacao)
+    
+    
