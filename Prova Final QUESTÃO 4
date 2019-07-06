@@ -1,0 +1,8 @@
+QUESTÃO 4
+janeiro = 20
+fevereiro = 17
+marco = 29
+
+total_de_dias = janeiro +fevereiro +marco
+
+print(total_de_dias)
