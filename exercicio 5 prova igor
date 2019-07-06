@@ -1,0 +1,6 @@
+#concatenar uma lista de strings
+
+a = ["igor", "mauro", "stefanes"]
+b = ["oi", "tchau", "não"]
+
+print (a + b)
