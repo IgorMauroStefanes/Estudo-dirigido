@@ -1,0 +1,12 @@
+#exercicio 1 prova igor
+
+
+from itertools import product
+
+caracteres = [150, 555, 1993]
+permsList = []
+genComb = product(caracteres, repeat=2)
+for subset in genComb:
+    print(subset)
+    permsList.append(subset)
+print(permsList) 
