@@ -1,1 +1,30 @@
+#faça um programa que leia as duas lista a seguir e imprima 
+idades=[25,40,28,33,69]
+nome= ["Igor","tassia","Camila","Lucas","Bruno"]
+n= (len (idades))
+mvalor=0
+imvalor=0
+menorvalor=0
+mediaiades=n
+for k in range (n):
+    if idades[k]>mediaiades:
+        mvalor=idades[k]
+        imvalor=k
+        idades[k]<menorvalor
+print ("Idade Média: ", mvalor)
+print("Nome com diade igual ou maior que média: ",nome[imvalor])
+print ("Nome mais novo: ",nome[menorvalor])
+##########
 
+#faça um programa que defina a fução chamada "imprime" tal que entrando as 
+#lista como parametros imprima todos os nomes e respectivas idades (um nome por linha)
+#Exemplo: imprime (nome, idades) entao imprime ana =30
+#                                              beto=50
+
+lista=[30,50,80,40]
+nomes= ["Igor","Tassia","Camila","rob"]
+n= (len (lista))
+for k in range (n):
+    print(lista[k]," ",nomes[k])
+
+print("")
