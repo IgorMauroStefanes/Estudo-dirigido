@@ -9,3 +9,11 @@ for linha in pasta:
 		contador=contador+1
 	print (linha)
 """
+
+#Programa que organize o texto e numeros.
+
+#####################texto#
+andre 9356 1234
+	roberto 047 8673 3873
+9755680 maria
+##########################
