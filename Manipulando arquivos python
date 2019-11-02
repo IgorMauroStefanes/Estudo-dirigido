@@ -1,0 +1,11 @@
+#entre em uma pasta no sistema operacional em modo escrita, e verifique se encontra a palavra rio.
+"""
+pasta=open("c:/Nova pasta/tt33.txt","r+")
+contador=0
+
+for linha in pasta:
+	linha=pasta.readline()
+	if "rio" in linha:
+		contador=contador+1
+	print (linha)
+"""
