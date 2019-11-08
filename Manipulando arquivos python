@@ -24,16 +24,28 @@ andre 9356 1234
 ###########
 #aula dia 8/11/2019
 #crie um programa para gerar um arquivo "impar.txt" listando os numeros imparesde 1 a 10
+pasta=open("c:/Nova pasta/impar.txt","r")
+pasta1=open("c:/Nova pasta/imparduplicado.txt","w")
 
-pasta=open("c:/Nova pasta/impar.txt","w")
+
+for linha in range(5):
+	linha=pasta.readline()
+	print(linha)
+	y=int(linha)
+	pasta1.write(str(y*2)+"\n")
+pasta.close()
+pasta1.close()
+
+pasta=open("c:/Nova pasta/impar.txt","w") #w para gravar  r para ler
 
 for k in range(1,10,2):
-	pasta.write(str(k)+"\n")
-pasta.close()
+	pasta.write(str(k)+"\n")   #"\n" serve para pular linha
+pasta.close()                      # o srt serve para dizer que é string.
 
-
+#############################################################
 #crie um programa para ler o arquivo "impar.txt" acima e multiplicar cada numero por 2
 
+############################################################
 #Crie um programa para organizar um arquivo que contem uma agenda telefonica
 #deve partir de um arquivo "agenda.txt" com nomes e telefones desorganizados
 #e arrumar as tabulações e ordem alfabetica.
